@@ -1,0 +1,7 @@
+baseURL = "https://lucid-brattain-3be03e.netlify.app/"	#prod
+#baseURL = "https://sharp-khorana-4765e0.netlify.app/"	#dev
+languageCode = "en"
+title = "Inside Casino"
+theme = "tw-components"
+paginate = 70
+timeout = 200000

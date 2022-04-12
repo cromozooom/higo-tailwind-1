@@ -1,0 +1,28 @@
+{{ define "main" }}
+<!-- prettier-ignore -->
+{{/* VARS */}}
+{{ $content := 0}}
+{{ $form := 1}}
+{{ $footer := 0}}
+
+{{ .Content }}
+
+<!-- prettier-ignore -->
+{{ if $content }}
+<div class="container">
+  <article class="py-8 mx-auto prose">{{ .Content }}</article>
+</div>
+{{ end }}
+
+<!-- prettier-ignore -->
+{{ if $form }} 
+  {{ partial "forms-01.html" . }} 
+{{ end }} 
+{{ if $footer }} 
+  {{ partial "footer-01.html" . }} 
+{{ end }}
+
+<form action="">
+  <input type="text" />
+</form>
+{{ end }}

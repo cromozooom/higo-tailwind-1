@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+  <head>
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/syntax.css" />
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+  <body>
+    <!-- prettier-ignore -->
+    <!-- prettier-ignore -->
+    <div class="w-full py-3 bg bg-slate-50">
+      {{ partial "breadcrumb.html" . }}
+    </div>
+    <!-- 
+      <pre></pre>
+    -->
+
+    <script>
+      function setup() {
+        return {
+          activeTab: 0,
+          tabs: ['Preview', 'Code'],
+        }
+      }
+    </script>
+
+    <div class="flex">
+      <div class="w-[20rem] max-w-xs py-4 sidebar">
+        <div
+          class="sticky top-0 block h-screen p-4 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100"
+        >
+          {{ $currentNode := . }}
+          <h2 class="font-bold">Components</h2>
+          <ul>
+            <!-- prettier-ignore -->
+            {{ range.Site.Menus.components }}
+            <li>
+              <a href="{{ .URL }}" class="underline">{{ .Name }} </a>
+            </li>
+            {{ end }}
+          </ul>
+
+          <!-- prettier-ignore
+            <ul>
+              {{ range .Site.Pages }}
+              <li>
+                <a href="{{ .Permalink }}"> {{ .Title }} </a>
+              </li>
+              {{ end }}
+            </ul>
+           -->
+        </div>
+      </div>
+      <main class="w-full">{{ block "main" . }}{{ end }}</main>
+    </div>
+
+    <script>
+      new ClipboardJS('.btn')
+    </script>
+  </body>
+</html>
