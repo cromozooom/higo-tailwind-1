@@ -1,40 +1,40 @@
 <div class="relative w-full p-4 overflow-hidden bg-blue-50">
-  <form
-    action=""
-    class="flex items-center justify-center p-4 bg-white rounded-md"
-  >
-    <label for="quantity" class="px-4 font-bold text-gray-500">Quantity</label>
-    <div class="flex items-center" x-data="{ quantity: 0, max: 10 }">
+  <form action="" class="flex items-center justify-center p-4 bg-white rounded-md">
+    <label for="quantityLimit" class="px-4 font-bold text-gray-500">Quantity</label>
+    <div class="flex items-center">
       <span
         x-on:click="
-        if(quantity >= 1) {
-          quantity = quantity - 1
+        if(maxQty >= 1) {
+          maxQty = maxQty - 1
         } else {
-          quantity = 0
+          maxQty = 0
         }
         "
         class="flex items-center justify-center font-bold text-gray-500 rounded-full cursor-pointer select-none h-9 w-9 bg-slate-100"
       >
         -
       </span>
-      <select
-        class="border-0 rounded-md clean-select"
-        id="quantity"
-        x-model.number="quantity"
-      >
+      <select class="border-0 rounded-md clean-select" id="quantityLimit" x-model.number="maxQty">
         <option>0</option>
         <template x-for="i in max" :key="index">
           <option x-text="i"></option>
         </template>
       </select>
       <span
-        x-on:click="quantity = quantity + 1"
+        x-on:click="
+        if(maxQty < max) {
+          maxQty = maxQty + 1
+        }
+        "
         class="flex items-center justify-center font-bold text-gray-500 rounded-full cursor-pointer select-none h-9 w-9 bg-slate-100"
       >
         +
       </span>
       <span class="ml-2 text-gray-300">
-        (max <span x-text="max"></span> prod.)
+        (
+        <span x-show="maxQty != max">max <span x-text="max"></span> prod.</span>
+        <span class="text-red-500" x-show="maxQty === max"> limit reached </span>
+        )
       </span>
     </div>
   </form>

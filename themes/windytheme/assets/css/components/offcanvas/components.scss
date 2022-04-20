@@ -10,9 +10,9 @@ body {
 
 .offcanvas { 
 	position: absolute;
-	top: 0;
+	top: 3rem;
 	right: 0;
-	height: 100vh;
+	height: calc(100vh - 3rem);
 	width: 50vw;
 	overflow-x: hidden;
 	overflow-y: scroll;
@@ -41,7 +41,6 @@ body {
 	box-shadow: 0 0 10px rgba(#000, .2);
 	&--container {
 		position: relative;
-		transform: none !important;
 	}
 	&--head {
 		//position: sticky;
@@ -57,8 +56,10 @@ body {
 		@apply flex items-center justify-between px-3 bg-blue-500 text-blue-50;
 	}
 	&--content {
+		@extend %devall;
 		position: initial;
-		//margin-top: 3rem;
+		//height: calc(100vh - 3rem);
+		@apply px-3;
 	}
 	&--backdrop {
 		position: fixed;
