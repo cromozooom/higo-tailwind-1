@@ -1,0 +1,30 @@
+/* .form-switch {
+    @apply outline-1 outline outline-red-600;
+  }
+  .form-switch * {
+    @apply outline-1 outline outline-red-600;
+  } */
+  /* .form-switch {
+    @apply pl-10 outline-1 outline outline-red-600;
+  } */
+
+  .form-switch .form-check-input {
+    /* background-size: initial; */
+    /* background-position: left center; */
+    /* margin-top: 0.1rem; */
+
+    @apply bg-auto bg-left mt-1;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+    -webkit-transition: background-position 0.15s ease-in-out;
+    transition: background-position 0.15s ease-in-out;
+  }
+
+  .form-switch .form-check-input:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  }
+
+  .form-switch .form-check-input:checked {
+    @apply bg-right;
+    /* background-position: right center; */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  }

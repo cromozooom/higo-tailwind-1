@@ -1,0 +1,69 @@
+{{- /*
+  Usage: `example args`
+
+  `args` are all optional and can be one of the following:
+    * id: the `div`'s id - default: ""
+    * class: any extra class(es) to be added to the `div` - default: ""
+    * show_preview: if the preview should be output in the HTML - default: `true`
+    * show_markup: if the markup should be output in the HTML - default: `true`
+*/ -}}
+
+{{- $id := .Get "id" -}}
+{{- $class := .Get "class" -}}
+{{- $lang := .Get "lang" | default "html" -}}
+{{- $show_preview := .Get "show_preview" | default true -}}
+{{- $show_markup := .Get "show_markup" | default true -}}
+{{- $source := .Get "source" -}}
+
+<div class="w-full" x-data="{activeTab: 0, tabs: ['Preview', 'Code']}">
+  <div class="flex items-end">
+    <template x-for="(tab, index) in tabs" :key="index">
+  
+      <button
+      class="p-2"
+      :class="activeTab===index ? 'text-green-500' : ''"
+      @click="activeTab = index"
+      x-text="tab"
+      >
+        
+      </button>
+    </template>
+  </div>
+  
+  <div x-show="activeTab===0">
+    {{ $matches := .Page.Resources.Match $source }}
+    {{ $code := newScratch }}
+    {{ $sourceCode := "" }}
+    
+    {{ range $matches }}
+      {{ $code.Set "sourceCode" ( .Content | safeHTML) }}
+    {{ end }}
+
+    {{ $sourceCode := $code.Get "sourceCode" }}
+    
+
+    {{- if eq $show_preview true -}}
+    <div{{ with $id }} id="{{ . }}"{{ end }} class="w-full rounded-md overflow-hidden {{ with $class }} {{ . }}{{ end }}">
+      {{- $sourceCode  -}}
+    </div>
+    {{- end -}}
+  </div>
+  
+  {{- if eq $show_markup true -}}
+    <div class="block w-full">
+
+      <div class="relative w-full"  x-show="activeTab===1">
+        <button class="absolute right-7 top-2 btn btn-primary" data-clipboard-target="#copy_{{ $id }}">Copy code</button>
+        <div {{ with $id }} id="copy_{{ . }}"{{ end }}>
+          
+          {{-  $sourceCode := replaceRE `<svg class="bd-placeholder-img(?:-lg)?(?: *?bd-placeholder-img-lg)? ?(.*?)".*?<\/svg>\n` `<img src="..." class="$1" alt="...">` $sourceCode -}}
+          {{-  $sourceCode = replaceRE ` (class=" *?")` ""  $sourceCode -}}
+          {{- highlight (trim  $sourceCode "\n") $lang "" -}}
+  
+        </div>
+      </div>
+    </div>
+  {{- end -}}
+</div>
+
+

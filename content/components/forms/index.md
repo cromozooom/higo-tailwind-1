@@ -4,7 +4,7 @@ title: 'Forms'
 image: ''
 menu:
   components:
-    name: 'forms'
+    name: 'Forms'
 ---
 
 ## Register form

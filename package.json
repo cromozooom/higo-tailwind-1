@@ -1,15 +1,23 @@
 {
+  "name": "hugo-tailwind",
+  "version": "1.0.0",
+  "description": "solopx-hugo-tailwind",
+  "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./static/tailwind.css -o ./static/main.css -w ",
-    "build": "cross-env NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./static/tailwind.css -o ./static/main.css --minify"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "tailwindcss": "^3.0.5"
-  },
+  "author": "Razvan Nicu",
+  "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.1.0",
+    "prettier": "^2.6.2",
+    "prettier-plugin-tailwindcss": "^0.1.9",
+    "tailwindcss": "^3.0.24",
     "@tailwindcss/custom-forms": "^0.2.1",
     "@tailwindcss/forms": "^0.5.0",
-    "@tailwindcss/typography": "^0.5.2",
-    "cross-env": "^7.0.3"
+    "@tailwindcss/typography": "^0.5.2"
   }
 }

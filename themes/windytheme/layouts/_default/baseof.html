@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  {{- partial "head.html" . -}}
+
+  <!-- prettier-ignore -->
+  <body {{ if .Params.data }} x-data="{
+        {{- range $index, $data := .Params.data -}}
+          {{- if gt $index 0 -}},{{- end -}}
+          {{- $data.title -}}: {{- $data.value -}}
+        {{- end -}}
+      }" {{ end }}>
+  {{- partial "header.html" . -}}
+
+  <div class="flex">
+    <div
+      class="absolute inset-y-0 left-0 z-40 w-full pr-4 transition duration-200 ease-in-out transform -translate-x-full bg-white sm:w-3/12 lg:w-2/12 tex-left md:relative md:translate-x-0 sidebar">
+      <div
+        class="sticky top-0 block h-screen p-4 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
+        {{ $currentNode := . }}
+        <h2 class="font-bold">Components</h2>
+        <ul>
+          <!-- prettier-ignore -->
+          {{ range.Site.Menus.components }}
+          <li>
+            <a href="{{ .URL }}" class="underline">{{ .Name }} </a>
+          </li>
+          {{ end }}
+        </ul>
+        <h2 class="mt-3 font-bold">Codepen</h2>
+        <ul>
+          <!-- prettier-ignore -->
+          {{ range.Site.Menus.codepen }}
+          <li>
+            <a href="{{ .URL }}" class="underline">{{ .Name }} </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+    <main class="w-full p-4 prose sm:w-9/12 lg:w-8/12 sm:pr-10 lg:pr-4">
+      {{- block "main" . }}{{- end }}
+    </main>
+    <aside class="hidden w-full p-4 px-4 lg:w-2/12 lg:block">
+      <a href="https://solopx.com">made by soloPX</a>
+    </aside>
+  </div>
+  {{- partial "footer.html" . -}}  
+</body>
+</html>

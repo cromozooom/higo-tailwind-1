@@ -4,7 +4,7 @@ title: 'Buttons'
 image: ''
 menu:
   components:
-    name: 'buttons'
+    name: 'Buttons'
 ---
 
 ## Buttons
