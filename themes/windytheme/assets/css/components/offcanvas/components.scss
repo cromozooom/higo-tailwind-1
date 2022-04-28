@@ -10,9 +10,9 @@ body {
 
 .offcanvas { 
 	position: absolute;
-	top: 3rem;
+	top: 0;
 	right: 0;
-	height: calc(100vh - 3rem);
+	height: 100vh;
 	width: 50vw;
 	overflow-x: hidden;
 	overflow-y: scroll;
@@ -41,6 +41,7 @@ body {
 	box-shadow: 0 0 10px rgba(#000, .2);
 	&--container {
 		position: relative;
+		transform: none !important;
 	}
 	&--head {
 		//position: sticky;
@@ -48,7 +49,7 @@ body {
 		top: 0;
 		width: 100%;
 		z-index: 5;
-		box-shadow: 0 10px 15px rgba(#000, .15);
+
 	}
 	&--head-content {
 		height: 3rem;
@@ -56,10 +57,8 @@ body {
 		@apply flex items-center justify-between px-3 bg-blue-500 text-blue-50;
 	}
 	&--content {
-		@extend %devall;
 		position: initial;
-		//height: calc(100vh - 3rem);
-		@apply px-3;
+		//margin-top: 3rem;
 	}
 	&--backdrop {
 		position: fixed;
@@ -74,7 +73,6 @@ body {
 }
 
 .beacon {
-	//@extend %devall;
 	position: fixed;
 	bottom: 0;
 	right: 0;
@@ -82,11 +80,9 @@ body {
 	height: auto;
 	width: var(--width-offcanvas, 50vw);
 	display: block;
-	z-index: 5;
-	box-shadow: 0 -10px 15px rgba(#000, .15);
-	@apply bg-gray-50;
+	z-index: 1;
 	&--container {
-		@apply bg-gray-50;
+		box-shadow: 10px 0 15px rgba(#000, .2);
 	}
 	&--cta {
 		position: absolute;

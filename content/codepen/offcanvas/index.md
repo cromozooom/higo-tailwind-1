@@ -13,6 +13,4 @@ menu:
     name: 'offcanvas'
 ---
 
-# Offcanvas
-
 {{< example-gb id="offcanvas1" source="offcanvas1.html" >}}

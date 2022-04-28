@@ -1,4 +1,3 @@
-
 <div class="offcanvas" x-show="offScreenOpen" @click.outside="offScreenOpen = false; beaconOpen = false; document.body.classList.remove('overflow-hidden');">
 	<div class="offcanvas--beacon beacon">
 		<div class="beacon--container bg-blue-50">
@@ -17,14 +16,14 @@
 	<div class="offcanvas--container">
 		<div class="offcanvas--head">
 			<div class="offcanvas--head-content">
-				<b>Offcanvas</b>
+				<b>head</b>
 				<button x-on:click="offScreenOpen = false; beaconOpen = false; document.body.classList.remove('overflow-hidden');" class="spx-btn spx-btn-primary">
 					<span>&#x2715</span>
 				</button>
 			</div>
 		</div>
 		
-		<div class="px-3 pt-[3.5rem] offcanvas--content" :class="beaconOpen ? 'pb-20' : ''">
+		<div class="px-3 offcanvas--content" :class="beaconOpen ? 'pb-20' : ''">
 			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
 			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
 			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
@@ -79,7 +78,7 @@
 <div class="cursor-pointer offcanvas--backdrop" x-show="offScreenOpen"></div>
 
 
-<div class="relative w-full p-4 overflow-hidden bg-blue-50">
+<div>
 	<div class="container px-4 mx-auto">
 		<button x-on:click="offScreenOpen = !offScreenOpen; document.body.classList.add('overflow-hidden');" @keydown.escape="offScreenOpen = false" class="spx-btn spx-btn-primary">
 			<span x-show="!offScreenOpen">Open</span>

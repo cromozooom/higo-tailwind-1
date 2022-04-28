@@ -1,21 +1,35 @@
 <div class="relative w-full p-4 overflow-hidden bg-blue-50">
-  <form action="" class="flex items-center justify-center p-4 bg-white rounded-md">
-    <label for="quantityCircle" class="px-4 font-bold text-gray-500">Quantity</label>
-    <div class="flex items-center">
+  <form
+    action=""
+    class="flex items-center justify-center p-4 bg-white rounded-md"
+  >
+    <label for="quantity" class="px-4 font-bold text-gray-500">Quantity</label>
+    <div class="flex items-center" x-data="{ quantity: 1 }">
       <span
         x-on:click="
-        if(circleQty >= 1) {
-          circleQty = circleQty - 1
+        if(quantity >= 1) {
+          quantity = quantity - 1
         } else {
-          circleQty = 0
+          quantity = 0
         }
         "
         class="flex items-center justify-center font-bold text-gray-500 rounded-full cursor-pointer select-none h-9 w-9 bg-slate-100"
       >
         -
       </span>
-      <input x-model.number="circleQty" id="quantityCircle" type="text" class="mx-1 w-[3rem] min-w-[4rem] rounded-md border-0 text-center" value="1" />
-      <span x-on:click="circleQty = circleQty + 1" class="flex items-center justify-center font-bold text-gray-500 rounded-full cursor-pointer select-none h-9 w-9 bg-slate-100"> + </span>
+      <input
+        x-model.number="quantity"
+        id="quantity"
+        type="text"
+        class="text-center mx-1 rounded-md border-0 min-w-[4rem] w-[3rem]"
+        value="1"
+      />
+      <span
+        x-on:click="quantity = quantity + 1"
+        class="flex items-center justify-center font-bold text-gray-500 rounded-full cursor-pointer select-none h-9 w-9 bg-slate-100"
+      >
+        +
+      </span>
     </div>
   </form>
 </div>

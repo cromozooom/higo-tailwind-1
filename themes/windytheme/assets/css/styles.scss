@@ -6,22 +6,25 @@
   .prose {
     @apply w-full max-w-none;
   }
+
   .clean-select {
     background-image: none;
     @apply px-0 w-[3rem] text-center mx-1;
   }
+
   .prose pre {
     @apply block px-4 mt-0 rounded-md;
   }
+
   pre {
     @apply block p-4 mt-0 rounded-md overflow-hidden;
   }
-  
+
   @import "mixins";
   @import "components/btn/components";
   @import "components/form-switch/components";
   @import "components/offcanvas/components";
-  @import "components/quantity-selector/components";
+  @import "components/drop-down/components";
 
   /*
   .prose pre {

@@ -1,23 +1,32 @@
 <div class="relative w-full p-4 overflow-hidden bg-blue-50">
-  <form action="" class="flex items-center justify-center p-4 bg-white rounded-md">
+  <form
+    action=""
+    class="flex items-center justify-center p-4 bg-white rounded-md"
+  >
     <label for="quantity" class="px-4 font-bold text-gray-500">Quantity</label>
-    <div class="qty-sel-v1">
+    <div class="flex items-center" x-data="{ quantity: 1 }">
       <span
         x-on:click="
-        if(squareQty >= 1) {
-          squareQty = squareQty - 1
+        if(quantity >= 1) {
+          quantity = quantity - 1
         } else {
-          squareQty = 0
+          quantity = 0
         }
         "
+        class="flex items-center justify-center h-10 text-2xl text-gray-300 border border-r-0 border-gray-300 rounded-l-lg cursor-pointer select-none w-9"
       >
         <b class="mb-1">−</b>
       </span>
-      <input x-model.number="squareQty" id="quantity" type="text" value="1" />
+      <input
+        x-model.number="quantity"
+        id="quantity"
+        type="text"
+        class="text-center border border-l-0 border-r-0 h-10 w-[2rem] border-gray-300"
+        value="1"
+      />
       <span
-        x-on:click="
-        squareQty = squareQty + 1
-      "
+        x-on:click="quantity = quantity + 1"
+        class="flex items-center justify-center h-10 text-2xl text-gray-300 border border-l-0 border-gray-300 rounded-r-lg cursor-pointer select-none w-9"
       >
         <b class="mb-1">+</b>
       </span>
