@@ -1,0 +1,36 @@
+.card-links {
+  @apply overflow-hidden rounded-md border border-gray-200 bg-white shadow-lg shadow-teal-100;
+  &--header {
+    @apply flex justify-between bg-teal-600 text-white;
+  }
+  &--title-icon-container {
+    @apply flex min-w-[3.2rem] items-center justify-center bg-teal-700;
+  }
+  &--title-icon {
+    @apply h-[1.5rem] w-[1.5rem];
+  }
+  &--title {
+    @apply grow px-3 py-2 text-left text-lg font-bold;
+  }
+  &--weight {
+    @apply flex items-center justify-center bg-teal-500 px-3;
+    svg {
+      @apply h-[1.5rem] w-[1.5rem];
+    }
+  }
+  &--list {
+    @apply list-none p-0;
+    li {
+      @apply m-0 p-0;
+    }
+    a {
+      @apply flex bg-gray-50 no-underline hover:bg-teal-200;
+    }
+  }
+  &--counter {
+    @apply min-w-[3.2rem] bg-gray-200 bg-opacity-50 py-[.6rem] px-2;
+  }
+  &--text {
+    @apply grow bg-gray-50 bg-opacity-50 px-2 py-[.6rem];
+  }
+}

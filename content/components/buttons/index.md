@@ -10,3 +10,5 @@ menu:
 ## Buttons
 
 {{< example-gb id="main-buttons" source="main-buttons.html" >}}
+
+{{< example-gb id="sea-buttons" source="sea-buttons.html" >}}

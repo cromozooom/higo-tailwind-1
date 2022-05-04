@@ -1,0 +1,9 @@
+.card-pills {
+  //@extend %devall;
+  &--weight {
+    @apply flex items-center justify-center;
+    svg {
+      @apply h-[1.5rem] w-[1.5rem];
+    }
+  }
+}

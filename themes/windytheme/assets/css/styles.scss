@@ -1,6 +1,6 @@
-@import "node_modules/tailwindcss/base";
-@import "node_modules/tailwindcss/components";
-@import "node_modules/tailwindcss/utilities";
+@import './node_modules/tailwindcss/base';
+@import './node_modules/tailwindcss/components';
+@import './node_modules/tailwindcss/utilities';
 
 @layer components {
   .prose {
@@ -9,22 +9,23 @@
 
   .clean-select {
     background-image: none;
-    @apply px-0 w-[3rem] text-center mx-1;
+    @apply mx-1 w-[3rem] px-0 text-center;
   }
 
   .prose pre {
-    @apply block px-4 mt-0 rounded-md;
+    @apply mt-0 block rounded-md px-4;
   }
 
   pre {
-    @apply block p-4 mt-0 rounded-md overflow-hidden;
+    @apply mt-0 block overflow-hidden rounded-md p-4;
   }
 
-  @import "mixins";
-  @import "components/btn/components";
-  @import "components/form-switch/components";
-  @import "components/offcanvas/components";
-  @import "components/drop-down/components";
+  @import 'mixins';
+  @import 'components/btn/components';
+  @import 'components/form-switch/components';
+  @import 'components/offcanvas/components';
+  @import 'components/drop-down/components';
+  @import 'components/card-links/components';
 
   /*
   .prose pre {
@@ -32,5 +33,6 @@
   .prose pre code {
     @apply break-words whitespace-pre block max-w-[100%] overflow-scroll;
   }
+
   */
 }
