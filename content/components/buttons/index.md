@@ -7,7 +7,7 @@ menu:
     name: 'Buttons'
 ---
 
-## Buttons
+## Buttons this
 
 {{< example-gb id="main-buttons" source="main-buttons.html" >}}
 

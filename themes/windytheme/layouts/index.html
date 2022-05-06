@@ -3,6 +3,7 @@
 {{ .Content }}
   {{ $form := 1 }}
   {{ if $form }} 
+    {{ partial "activities.html" . }} 
     {{ partial "forms-01.html" . }} 
   {{ end }} 
 {{ end }}

@@ -1,0 +1,328 @@
+{
+    "activities": [
+        {
+            "id": "provideService",
+            "title": "Provide Service",
+            "description": "Solicitation or promotion of respective Financial Service",
+            "country": "gb",
+            "productId": "Investment Advice",
+            "categoryTitle": "Activities",
+            "resultDetails": [
+                {
+                    "resultDecision": "no",
+                    "tags": [],
+                    "remarks": [
+                        {
+                            "title": "Instruments",
+                            "description": "Restrictions can apply for offering concrete Financial Instruments. In such cases, always conduct a new search for a specific asset class"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "analyzeClientSituation",
+            "title": "Analyze Client Situation",
+            "description": "Evaluate personal and financial situation incl. analyzing clients assets and liabilities and assessing clients investor profile (incl. risk and suitability profile) related to the offered services",
+            "country": "ke",
+            "productId": "Investment Advice",
+            "categoryTitle": "Activities",
+            "resultDetails": [
+                {
+                    "resultDecision": "no",
+                    "tags": [],
+                    "remarks": [
+                        {
+                            "title": "Instruments",
+                            "description": "Restrictions can apply for offering concrete Financial Instruments. In such cases, always conduct a new search for a specific asset class"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "defineStrategy",
+            "title": "Define Strategy",
+            "description": "Define investment strategy for the corresponding service or provide personalized advice on portfolio composition",
+            "country": "ro",
+            "productId": "Investment Advice",
+            "categoryTitle": "Activities",
+            "resultDetails": [
+                {
+                    "resultDecision": "no",
+                    "tags": [],
+                    "remarks": [
+                        {
+                            "title": "Instruments",
+                            "description": "Restrictions can apply for offering concrete Financial Instruments. In such cases, always conduct a new search for a specific asset class"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "negotiateTerms",
+            "title": "Negotiate Terms",
+            "description": "Negotiate terms or conditions",
+            "country": "gb",
+            "productId": "Investment Advice",
+            "categoryTitle": "Activities",
+            "resultDetails": [
+                {
+                    "resultDecision": "no",
+                    "tags": [],
+                    "remarks": [
+                        {
+                            "title": "Instruments",
+                            "description": "Restrictions can apply for offering concrete Financial Instruments. In such cases, always conduct a new search for a specific asset class"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "provideAdviceInstruments",
+            "title": "Provide Advice Instruments",
+            "description": "Provide advice on financial instruments",
+            "country": "gb",
+            "productId": "Investment Advice",
+            "categoryTitle": "Activities",
+            "resultDetails": [
+                {
+                    "resultDecision": "yes",
+                    "tags": [],
+                    "remarks": [
+                        {
+                            "title": "Instruments",
+                            "description": "Restrictions can apply for offering concrete Financial Instruments. In such cases, always conduct a new search for a specific asset class"
+                        }
+                    ],
+                    "restrictions": [
+                        {
+                            "title": "provideAdviceInstruments",
+                            "description": "Provided that the service will not be renumerated by the Client."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "conductPerformanceReview",
+            "title": "Conduct Performance Review",
+            "description": "Conduct review of past performance of clients services",
+            "country": "gb",
+            "productId": "Investment Advice",
+            "categoryTitle": "Activities",
+            "resultDetails": [
+                {
+                    "resultDecision": "yes",
+                    "tags": [],
+                    "remarks": [
+                        {
+                            "title": "Instruments",
+                            "description": "Restrictions can apply for offering concrete Financial Instruments. In such cases, always conduct a new search for a specific asset class"
+                        }
+                    ],
+                    "restrictions": [
+                        {
+                            "title": "conductPerformanceReview",
+                            "description": "Provided that the service will not be renumerated by the Client."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "provideService",
+            "title": "Provide Service",
+            "description": "Solicitation or promotion of respective Financial Service",
+            "country": "gb",
+            "productId": "Investment Advice",
+            "categoryTitle": "Activities",
+            "resultDetails": [
+                {
+                    "resultDecision": "yes",
+                    "tags": [],
+                    "remarks": [
+                        {
+                            "title": "Instruments",
+                            "description": "Restrictions can apply for offering concrete Financial Instruments. In such cases, always conduct a new search for a specific asset class"
+                        }
+                    ],
+                    "restrictions": [
+                        {
+                            "title": "provideService",
+                            "description": "Provided that the service will not be renumerated by the Client."
+                        }
+                    ],
+                    "reasons": [
+                        {
+                            "title": "Remark: Formalising the clients upon demand request",
+                            "description": "Formalising the fact that the Bank acts upon the  Client's own demand: The Advisor should add a note in the Client's file containing the following information: (i) the  Client has contacted the Bank or the Bank has only contacted the Client upon his / her own request, (ii) the  Client's reason for contacting the Bank, (iii) the services required by the Client and the services offered by the Bank, (iv) the date, and (v) the Advisor's signature."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "analyzeClientSituation",
+            "title": "Analyze Client Situation",
+            "description": "Evaluate personal and financial situation incl. analyzing clients assets and liabilities and assessing clients investor profile (incl. risk and suitability profile) related to the offered services",
+            "country": "gb",
+            "productId": "Investment Advice",
+            "categoryTitle": "Activities",
+            "resultDetails": [
+                {
+                    "resultDecision": "yes",
+                    "tags": [],
+                    "remarks": [
+                        {
+                            "title": "Remark: Instruments",
+                            "description": "Restrictions can apply for offering concrete Financial Instruments. In such cases, always conduct a new search for a specific asset class"
+                        }
+                    ],
+                    "restrictions": [
+                        {
+                            "title": "analyzeClientSituation",
+                            "description": "Provided that the service will not be renumerated by the Client."
+                        }
+                    ],
+                    "reasons": [
+                        {
+                            "title": "Remark: Formalising the clients upon demand request",
+                            "description": "Formalising the fact that the Bank acts upon the  Client's own demand: The Advisor should add a note in the Client's file containing the following information: (i) the  Client has contacted the Bank or the Bank has only contacted the Client upon his / her own request, (ii) the  Client's reason for contacting the Bank, (iii) the services required by the Client and the services offered by the Bank, (iv) the date, and (v) the Advisor's signature."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "defineStrategy",
+            "title": "Define Strategy",
+            "description": "Define investment strategy for the corresponding service or provide personalized advice on portfolio composition",
+            "country": "gb",
+            "productId": "Investment Advice",
+            "categoryTitle": "Activities",
+            "resultDetails": [
+                {
+                    "resultDecision": "yes",
+                    "tags": [],
+                    "remarks": [
+                        {
+                            "title": "Remark: Instruments",
+                            "description": "Restrictions can apply for offering concrete Financial Instruments. In such cases, always conduct a new search for a specific asset class"
+                        }
+                    ],
+                    "restrictions": [
+                        {
+                            "title": "defineStrategy",
+                            "description": "Provided that the service will not be renumerated by the Client."
+                        }
+                    ],
+                    "reasons": [
+                        {
+                            "title": "Remark: Formalising the clients upon demand request",
+                            "description": "Formalising the fact that the Bank acts upon the  Client's own demand: The Advisor should add a note in the Client's file containing the following information: (i) the  Client has contacted the Bank or the Bank has only contacted the Client upon his / her own request, (ii) the  Client's reason for contacting the Bank, (iii) the services required by the Client and the services offered by the Bank, (iv) the date, and (v) the Advisor's signature."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "negotiateTerms",
+            "title": "Negotiate Terms",
+            "description": "Negotiate terms or conditions",
+            "country": "gb",
+            "productId": "Investment Advice",
+            "categoryTitle": "Activities",
+            "resultDetails": [
+                {
+                    "resultDecision": "yes",
+                    "tags": [],
+                    "remarks": [
+                        {
+                            "title": "Remark: Instruments",
+                            "description": "Restrictions can apply for offering concrete Financial Instruments. In such cases, always conduct a new search for a specific asset class"
+                        }
+                    ],
+                    "restrictions": [
+                        {
+                            "title": "negotiateTerms",
+                            "description": "Provided that the service will not be renumerated by the Client."
+                        }
+                    ],
+                    "reasons": [
+                        {
+                            "title": "Remark: Formalising the clients upon demand request",
+                            "description": "Formalising the fact that the Bank acts upon the  Client's own demand: The Advisor should add a note in the Client's file containing the following information: (i) the  Client has contacted the Bank or the Bank has only contacted the Client upon his / her own request, (ii) the  Client's reason for contacting the Bank, (iii) the services required by the Client and the services offered by the Bank, (iv) the date, and (v) the Advisor's signature."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "provideAdviceInstruments",
+            "title": "Provide Advice Instruments",
+            "description": "Provide advice on financial instruments",
+            "country": "gb",
+            "productId": "Investment Advice",
+            "categoryTitle": "Activities",
+            "resultDetails": [
+                {
+                    "resultDecision": "yes",
+                    "tags": [],
+                    "remarks": [
+                        {
+                            "title": "Remark: Instruments",
+                            "description": "Restrictions can apply for offering concrete Financial Instruments. In such cases, always conduct a new search for a specific asset class"
+                        }
+                    ],
+                    "restrictions": [
+                        {
+                            "title": "provideAdviceInstruments",
+                            "description": "Provided that the service will not be renumerated by the Client."
+                        }
+                    ],
+                    "reasons": [
+                        {
+                            "title": "Remark: Formalising the clients upon demand request",
+                            "description": "Formalising the fact that the Bank acts upon the  Client's own demand: The Advisor should add a note in the Client's file containing the following information: (i) the  Client has contacted the Bank or the Bank has only contacted the Client upon his / her own request, (ii) the  Client's reason for contacting the Bank, (iii) the services required by the Client and the services offered by the Bank, (iv) the date, and (v) the Advisor's signature."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "conductPerformanceReview",
+            "title": "Conduct Performance Review",
+            "description": "Conduct review of past performance of clients services",
+            "country": "gb",
+            "productId": "Investment Advice",
+            "categoryTitle": "Activities",
+            "resultDetails": [
+                {
+                    "resultDecision": "yes",
+                    "tags": [],
+                    "remarks": [
+                        {
+                            "title": "Remark: Instruments",
+                            "description": "Restrictions can apply for offering concrete Financial Instruments. In such cases, always conduct a new search for a specific asset class"
+                        }
+                    ],
+                    "restrictions": [
+                        {
+                            "title": "conductPerformanceReview",
+                            "description": "Provided that the service will not be renumerated by the Client."
+                        }
+                    ],
+                    "reasons": [
+                        {
+                            "title": "Remark: Formalising the clients upon demand request",
+                            "description": "Formalising the fact that the Bank acts upon the  Client's own demand: The Advisor should add a note in the Client's file containing the following information: (i) the  Client has contacted the Bank or the Bank has only contacted the Client upon his / her own request, (ii) the  Client's reason for contacting the Bank, (iii) the services required by the Client and the services offered by the Bank, (iv) the date, and (v) the Advisor's signature."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

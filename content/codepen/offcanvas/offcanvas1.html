@@ -2,15 +2,17 @@
 <div class="offcanvas" x-show="offScreenOpen" @click.outside="offScreenOpen = false; beaconOpen = false; document.body.classList.remove('overflow-hidden');">
 	<div class="offcanvas--beacon beacon">
 		<div class="beacon--container bg-blue-50">
-			<div class="mb-3 spx-btn spx-btn-primary beacon--cta" x-on:click="beaconOpen = !beaconOpen">
+			<div class="mb-3 spx-btn spx-btn-primary beacon--cta" :class="beaconOpen ? 'open' : 'closed'" x-on:click="beaconOpen = !beaconOpen">
 				<span x-show="!beaconOpen">Details</span>
 				<span x-show="beaconOpen">Close</span>
 			</div>
 			<div :class="beaconOpen ? 'block' : 'hidden'">
-				<p class="px-3 py-4">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-					possimus.
-				</p>
+				<div class="px-3 py-2">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+						possimus.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -24,7 +26,7 @@
 			</div>
 		</div>
 		
-		<div class="px-3 pt-[3.5rem] offcanvas--content" :class="beaconOpen ? 'pb-20' : ''">
+		<div class="px-3 offcanvas--content" :class="beaconOpen ? 'pb-20' : ''">
 			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
 			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
 			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
