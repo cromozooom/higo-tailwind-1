@@ -1,5 +1,7 @@
 body {
-  //@extend %devall;
+  --width-offcanvas: 50vw;
+  --head-height: 3.5rem;
+
   position: relative;
   &.overflow-hidden {
     display: block;
@@ -11,6 +13,7 @@ body {
 .offcanvas {
   position: absolute;
   top: 0;
+  //bottom: 0;
   right: 0;
   height: 100vh;
   width: 50vw;
@@ -18,8 +21,6 @@ body {
   overflow-y: hidden;
   z-index: 41;
   display: block;
-  --width-offcanvas: 50vw;
-  --head-height: 3.5rem;
 }
 
 .offcanvas {
@@ -29,6 +30,7 @@ body {
   &--container {
     position: relative;
     transform: none !important;
+    height: 100vh;
   }
   &--head {
     //position: sticky;
@@ -43,6 +45,7 @@ body {
     @apply flex items-center justify-between bg-blue-500 px-3 text-blue-50;
   }
   &--content {
+    @extend %devall;
     margin-top: var(--head-height);
     position: initial;
     overflow-y: scroll;
