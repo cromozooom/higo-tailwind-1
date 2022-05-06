@@ -1,4 +1,5 @@
 body {
+  //@extend %devall;
   position: relative;
   &.overflow-hidden {
     display: block;
@@ -15,14 +16,13 @@ body {
   width: 50vw;
   overflow-x: hidden;
   overflow-y: hidden;
-  z-index: 3;
+  z-index: 41;
   display: block;
   --width-offcanvas: 50vw;
-  --head-height: 3rem;
+  --head-height: 3.5rem;
 }
 
 .offcanvas {
-  //@extend %devall;
   background: white;
   //@apply drop-shadow;
   box-shadow: 0 0 10px rgba(#000, 0.2);
@@ -67,7 +67,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 40;
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(5px);
@@ -88,13 +88,12 @@ body {
     box-shadow: 10px 0 15px rgba(#000, 0.2);
   }
   &--cta {
-    position: absolute;
-    top: calc(-1 * var(--head-height));
-    right: 15px;
+    --cta-height: 3rem;
+    top: calc(-1 * var(--cta-height));
+    left: 0;
     z-index: 5;
     &.open {
-      top: calc(-1 * var(--head-height) / 2);
-      @extend %devall;
+      top: calc(-1 * var(--cta-height) / 2);
     }
   }
 }

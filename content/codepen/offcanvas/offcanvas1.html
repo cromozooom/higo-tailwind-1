@@ -1,92 +1,108 @@
-
 <div class="offcanvas" x-show="offScreenOpen" @click.outside="offScreenOpen = false; beaconOpen = false; document.body.classList.remove('overflow-hidden');">
-	<div class="offcanvas--beacon beacon">
-		<div class="beacon--container bg-blue-50">
-			<div class="mb-3 spx-btn spx-btn-primary beacon--cta" :class="beaconOpen ? 'open' : 'closed'" x-on:click="beaconOpen = !beaconOpen">
-				<span x-show="!beaconOpen">Details</span>
-				<span x-show="beaconOpen">Close</span>
-			</div>
-			<div :class="beaconOpen ? 'block' : 'hidden'">
-				<div class="px-3 py-2">
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-						possimus.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="offcanvas--container">
-		<div class="offcanvas--head">
-			<div class="offcanvas--head-content">
-				<b>Offcanvas</b>
-				<button x-on:click="offScreenOpen = false; beaconOpen = false; document.body.classList.remove('overflow-hidden');" class="spx-btn spx-btn-primary">
-					<span>&#x2715</span>
-				</button>
-			</div>
-		</div>
-		
-		<div class="px-3 offcanvas--content" :class="beaconOpen ? 'pb-20' : ''">
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-			<p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
-		</div>
-	</div>
+  <div class="offcanvas--beacon beacon">
+    <div class="beacon--container bg-blue-50">
+      <div class="beacon--cta absolute flex w-full justify-between pl-3 pr-4" :class="beaconOpen ? 'open' : 'closed'">
+        <button class="flex h-[2.5rem] w-[2.5rem] items-center justify-center rounded-full bg-blue-600" x-on:click="beaconOpen = !beaconOpen">
+          <span x-show="!beaconOpen">
+            <svg class="h-[1rem] w-[1rem] text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z" />
+            </svg>
+          </span>
+          <span x-show="beaconOpen">
+            <svg class="h-[1rem] w-[1rem] text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path fill="currentColor" d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z" />
+            </svg>
+          </span>
+        </button>
+        <div class="flex">
+          <a href="#" class="flex w-[2.5rem] items-center justify-center rounded-l-full bg-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="h-[1rem] w-[1rem] text-white">
+              <path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+            </svg>
+          </a>
+          <a href="#" class="flex w-[2.5rem] items-center justify-center rounded-r-full bg-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="h-[1rem] w-[1rem] text-white">
+              <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div :class="beaconOpen ? 'block' : 'hidden'">
+        <div class="px-3 py-2">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, possimus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas--container">
+    <div class="offcanvas--head">
+      <div class="offcanvas--head-content">
+        <b>Offcanvas / linck a / link b</b>
+        <button x-on:click="offScreenOpen = false; beaconOpen = false; document.body.classList.remove('overflow-hidden');" class="spx-btn spx-btn-primary">
+          <span>✕</span>
+        </button>
+      </div>
+    </div>
+    <div class="offcanvas--content px-3 pb-[3rem]">
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+      <p class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit accusantium error corrupti assumenda eum, laboriosam quaerat harum facere, perferendis, omnis officiis libero! Odit quidem doloribus cupiditate corrupti in ea.</p>
+    </div>
+  </div>
 </div>
-<div class="cursor-pointer offcanvas--backdrop" x-show="offScreenOpen"></div>
+<div class="offcanvas--backdrop cursor-pointer" x-show="offScreenOpen"></div>
 
-
-<div class="relative w-full p-4 overflow-hidden bg-blue-50">
-	<div class="container px-4 mx-auto">
-		<button x-on:click="offScreenOpen = !offScreenOpen; document.body.classList.add('overflow-hidden');" @keydown.escape="offScreenOpen = false" class="spx-btn spx-btn-primary">
-			<span x-show="!offScreenOpen">Open</span>
-			<span x-show="offScreenOpen">Close</span>
-		</button>
+<div class="relative w-full overflow-hidden bg-blue-50 p-4">
+  <div class="container mx-auto px-4">
+    <button x-on:click="offScreenOpen = !offScreenOpen; document.body.classList.add('overflow-hidden');" @keydown.escape="offScreenOpen = false" class="spx-btn spx-btn-primary">
+      <span x-show="!offScreenOpen">Open</span>
+      <span x-show="offScreenOpen">Close</span>
+    </button>
     <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, possimus. Aspernatur modi dolores in, ducimus reprehenderit expedita ex saepe. Fuga laudantium excepturi dolorum et non voluptate! Quis explicabo ullam sunt.</p>
     <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, possimus. Aspernatur modi dolores in, ducimus reprehenderit expedita ex saepe. Fuga laudantium excepturi dolorum et non voluptate! Quis explicabo ullam sunt.</p>
     <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, possimus. Aspernatur modi dolores in, ducimus reprehenderit expedita ex saepe. Fuga laudantium excepturi dolorum et non voluptate! Quis explicabo ullam sunt.</p>
